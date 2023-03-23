@@ -38,7 +38,7 @@ func nrand(n int) []int {
 	return i
 }
 
-func benchAdd(b *testing.B, n int, newSet func(...int) Set[int]) {
+func benchAdd(b *testing.B, n int, newSet func(...int), Set[int]) {
 	nums := nrand(n)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
